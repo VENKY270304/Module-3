@@ -1,30 +1,34 @@
-# Exp.No:3e
-## SEB - STRING SLICING
+# Exp.No:3d  
+## TUPLES - A TUPLE WITH MULTIPLES OF 5
 
 ---
 
 ### AIM  
-To write a Python function that accepts a string and forms a new string by reversing the characters from the **4th position to the 10th position** with **alternate characters**, and then prints the new string.
+To write a Python program to create a tuple containing all multiples of 5 up to a given number **N**.
 
 ---
 
 ### ALGORITHM
 
 1. Begin the program.  
-2. Accept a string as input.  
-3. Take a slice of the input string from index **2** to **10** (Python uses 0-based indexing, so index 2 refers to the 3rd character, i.e., the 4th character in natural terms).  
-4. Reverse the sliced substring.  
-5. Extract every second character from the reversed substring using slicing (`[::2]`).  
-6. Print the final processed string.  
-7. Terminate the program.
+2. Accept an integer `N` from the user.  
+3. Use a generator expression inside the `tuple()` function to create a tuple `multiples_of_5` with values starting from `5` up to `N - 1`, stepping by `5`.  
+4. Return the tuple `multiples_of_5`.  
+5. Print the resulting tuple.  
+6. Terminate the program.
 
 ---
 
 ### PROGRAM
 
 ```
+n=int(input())
+result=tuple(i for i in range(5,n,5))
+print(result)
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/2acf552f-5c39-4e6f-9b27-36afcc734a1e)
 
 ### RESULT
+Thus , a Python program to create a tuple containing all multiples of 5 up to a given number **N** are verified.
