@@ -1,35 +1,34 @@
-# Exp.No:3e
-## SEB - Swap the following two tuples.
+# Exp.No:3d  
+## TUPLES - A TUPLE WITH MULTIPLES OF 5
 
 ---
 
 ### AIM  
-To write a Python function that swap the following two tuples.
+To write a Python program to create a tuple containing all multiples of 5 up to a given number **N**.
 
 ---
 
 ### ALGORITHM
 
 1. Begin the program.  
-2. Accept a string as input.  
-3. Swap the given two tuples.    
-4. Print the final processed string.  
-5. Terminate the program.
+2. Accept an integer `N` from the user.  
+3. Use a generator expression inside the `tuple()` function to create a tuple `multiples_of_5` with values starting from `5` up to `N - 1`, stepping by `5`.  
+4. Return the tuple `multiples_of_5`.  
+5. Print the resulting tuple.  
+6. Terminate the program.
 
 ---
 
 ### PROGRAM
 
 ```
-tuple1=eval(input())
-tuple2=eval(input())
-tuple1,tuple2=tuple2,tuple1
-print(tuple1)
-print(tuple2)
-
+n=int(input())
+result=tuple(i for i in range(5,n,5))
+print(result)
 ```
 
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/b50215e3-bf95-449c-954b-d6ab35a2572b)
+![image](https://github.com/user-attachments/assets/2acf552f-5c39-4e6f-9b27-36afcc734a1e)
+
 ### RESULT
-Thus,a Python function that swap the following two tuples are verified.
+Thus , a Python program to create a tuple containing all multiples of 5 up to a given number **N** are verified.
